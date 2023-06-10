@@ -1,0 +1,66 @@
+/* box sizing */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* define root variables */
+:root {
+  --bg-color: #e7e5e5;
+  --button-padding: 0.5rem 1rem 0.5rem 1rem;
+  --button-radius: 1.2rem;
+  --card-bg-color: #f3f2f2;
+  --border-color: #d3d3d3;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: var(--bg-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1rem 0;
+}
+
+/* buttons top on site */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.buttons button {
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}
+
+/* todolist form */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  background-color: var(--card-bg-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: solid thin var(--border-color);
+  margin-top: 2rem;
+}
+
+form button[type="submit"] {
+  margin-top: 1rem;
+  padding: var(--button-padding);
+  border-radius: var(--button-radius);
+}

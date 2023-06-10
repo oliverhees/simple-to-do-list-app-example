@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="./src/js/javascript.js" defer></script>
+    <title>ToDo List App</title>
+    <head>
+  <body>
+    <main>
+    <h1>Meine ToDo Liste</h1>
+    <div class="buttons">
+      <button data-js="create-button">Neues ToDo</button>
+      <button data-js="delete-button">Todos löschen</button>
+    </div>
+    <form data-js="form">
+      <label for="title">Titel</label>
+      <input type="text" name="title" data-js="title" />
+      <label for="task">Task</label>
+      <textarea name="task" id="task" name="task" cols="30" rows="10"></textarea>
+      <label for="date">Datum</label>
+      <input type="date" name="date" data-js="date" />
+      <button type="submit" data-js="submit">ToDo erstellen</button>
+    </form>
+    <section>
+      <ul data-js="card-listener">
+        <li data-js="list-element">
+          <article class="todo-card" data-js="todo-card">
+          <header>
+            <h2>ToDo title</h2>
+          </header>
+          <div class="todo-task">task</div>
+          <footer>
+            Zu erledigen bis: 12.12.1983
+          </footer>  
+          </article>
+        </li>
+        <li data-js="list-element">
+            <article class="todo-card" data-js="todo-card">
+            <header>
+              <h2>ToDo title</h2>
+            </header>
+            <div class="todo-task">task</div>
+            <footer>
+              Zu erledigen bis: 12.12.1983
+            </footer>  
+            </article>
+          </li>
+      </ul>
+    </section>
+    </main>
+
+  </body>
+</html>
